@@ -315,13 +315,13 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu">
           <li class="active">
-            <a class="" href="/">
+            <a class="" th:href="@{/}">
                           <i class="icon_house_alt"></i>
                           <span>Dashboard</span>
                       </a>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;" class="">
+            <a th:href="@{/invoice}" class="">
                           <i class="icon_document_alt"></i>
                           <span>Customers</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
@@ -331,7 +331,7 @@
               <li><a class="" href="form_validation.html">Form Validation</a></li>
             </ul>
           </li>
-          <li class="sub-menuf">
+          <li class="sub-menu">
             <a href="javascript:;" class="">
                           <i class="icon_desktop"></i>
                           <span>Invoices</span>

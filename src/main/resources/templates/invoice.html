@@ -41,6 +41,25 @@
     Author: BootstrapMade
     Author URL: https://bootstrapmade.com
   ======================================================= -->
+
+
+  <style>
+    .invoice-title h2, .invoice-title h3 {
+      display: inline-block;
+    }
+
+    .table > tbody > tr > .no-line {
+      border-top: none;
+    }
+
+    .table > thead > tr > .no-line {
+      border-bottom: none;
+    }
+
+    .table > tbody > tr > .thick-line {
+      border-top: 2px solid;
+    }
+  </style>
 </head>
 
 <body>
@@ -54,141 +73,22 @@
     <!--main content start-->
     <section id="main-content" style="background-color: #ffcf3d">
       <section class="wrapper">
-        <!--overview start-->
-        <div class="row">
-          <div class="col-lg-12">
-            <h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</h3>
-            <ol class="breadcrumb">
-              <li><i class="fa fa-home"></i><a href="/">Home</a></li>
-              <li><i class="fa fa-laptop" th:text="${#dates}"></i>Dashboard</li>
-            </ol>
-          </div>
-        </div>
+          <div class="row">
+            New Invoice
 
-        <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            <div class="info-box blue-bg">
-              <i class="fa fa-users"></i>
-              <div class="count">6.674</div>
-              <div class="title">Customers</div>
+            <div class="dropdown pull-right" style="margin: 0px 20px 0px 20px;">
+              <button class="dropdown-toggle" type="button" data-toggle="dropdown">Save
+                <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Preview</a></li>
+                <li><a href="#">Save</a></li>
+                <li><a href="#">Export</a></li>
+              </ul>
             </div>
-            <!--/.info-box-->
+
+            <button class="pull-right">Save Draft</button>
           </div>
-          <!--/.col-->
-
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            <div class="info-box brown-bg">
-              <i class="fa fa-spinner"></i>
-              <div class="count">7.538</div>
-              <div class="title">Pending</div>
-            </div>
-            <!--/.info-box-->
-          </div>
-          <!--/.col-->
-
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            <div class="info-box dark-bg">
-              <i class="fa fa-thumbs-o-up"></i>
-              <div class="count">4.362</div>
-              <div class="title">Paid</div>
-            </div>
-            <!--/.info-box-->
-          </div>
-          <!--/.col-->
-
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            <div class="info-box green-bg">
-              <i class="fa fa-spin"></i>
-              <div class="count">1.426</div>
-              <div class="title">New</div>
-            </div>
-            <!--/.info-box-->
-          </div>
-          <!--/.col-->
-
-        </div>
-        <!--/.row-->
-
-
-        <div class="row">
-          <div class="col-lg-9 col-md-12">
-
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2><i class="fa fa-tasks red"></i><strong>To Do List</strong></h2>
-                <div class="panel-actions">
-                  <a href="index.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
-                  <a href="index.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
-                  <a href="index.html#" class="btn-close"><i class="fa fa-times"></i></a>
-                </div>
-              </div>
-              <div class="panel-body-map">
-                <div class="table table-striped" style="height:380px;">
-                  <table style="width: 100%">
-                    <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Activity</th>
-                      <th>Remark</th>
-                      <th>Deadline</th>
-                      <th>Action</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr th:each="data : ${#numbers.sequence(1,10)}">
-                      <td>1</td>
-                      <td>Add</td>
-                      <td>We Are @Demo Stage</td>
-                      <td>Add</td>
-                      <td>Edit</td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <!-- List starts -->
-            <ul class="today-datas">
-              <!-- List #1 -->
-              <li>
-                <!-- Graph -->
-                <div><span id="todayspark1" class="spark"></span></div>
-                <!-- Text -->
-                <div class="datas-text">11,500 visitors/day</div>
-              </li>
-              <li>
-                <div><span id="todayspark2" class="spark"></span></div>
-                <div class="datas-text">15,000 Pageviews</div>
-              </li>
-              <li>
-                <div><span id="todayspark3" class="spark"></span></div>
-                <div class="datas-text">30.55% Bounce Rate</div>
-              </li>
-              <li>
-                <div><span id="todayspark4" class="spark"></span></div>
-                <div class="datas-text">$16,00 Revenue/Day</div>
-              </li>
-              <li>
-                <div><span id="todayspark5" class="spark"></span></div>
-                <div class="datas-text">12,000000 visitors every Month</div>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-        <!-- Today status end -->
-
       </section>
-      <div class="text-right">
-        <div class="credits">
-          Designed by <a href="https://techcaresinc.com/">Techcares Inc Solutions</a>
-        </div>
-      </div>
     </section>
     <!--main content end-->
   </section>
