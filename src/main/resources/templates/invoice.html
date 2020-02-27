@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+>
 
 <head>
   <meta charset="utf-8">
@@ -73,21 +73,38 @@
     <!--main content start-->
     <section id="main-content" style="background-color: #ffcf3d">
       <section class="wrapper">
-          <div class="row">
-            New Invoice
+        <div class="row col-lg-12">
 
-            <div class="dropdown pull-right" style="margin: 0px 20px 0px 20px;">
-              <button class="dropdown-toggle" type="button" data-toggle="dropdown">Save
-                <span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li><a href="#">Preview</a></li>
-                <li><a href="#">Save</a></li>
-                <li><a href="#">Export</a></li>
-              </ul>
-            </div>
+          New Invoice
 
-            <button class="pull-right">Save Draft</button>
+          <div class="dropdown pull-right" style="margin: 0px 20px 0px 20px;">
+            <button class="dropdown-toggle" data-toggle="dropdown" type="button">Save
+              <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Preview</a></li>
+              <li><a href="#">Save</a></li>
+              <li><a href="#">Export</a></li>
+            </ul>
           </div>
+
+          <button class="pull-right">Save Draft</button>
+        </div>
+
+        <div class="row col-lg-12" style="margin-top: 20px">
+          <div class="col-lg-9 fa fa-linux"
+               style="font-size: 19.2em">
+          </div>
+
+          <div class="col-lg-3"
+               style="height: 200px">
+            <label><strong>From</strong></label><br>
+            <label th:text="'Techcares Inc'"/><br>
+            <label th:text="'Lunga/Lunga Road, Ramisi'"/><br>
+            <label th:text="'P.O. Box 54-80404, Msambweni Kenya'"/><br>
+            <label th:text="'Tel: +254 759 184063'"/><br>
+            <label th:text="'Email: info@techcaresinc.com'"/><br>
+          </div>
+        </div>
       </section>
     </section>
     <!--main content end-->
