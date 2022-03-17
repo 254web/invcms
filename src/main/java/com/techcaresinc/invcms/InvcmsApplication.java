@@ -24,10 +24,10 @@ public class InvcmsApplication extends SpringBootServletInitializer {
         SpringApplication.run(InvcmsApplication.class, args);
     }
 
-    @Override
+   /* @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(InvcmsApplication.class);
-
+        return builder.sources(CmsApplication.class);
     }
+*/
 
 }
